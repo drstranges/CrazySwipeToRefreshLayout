@@ -9,3 +9,5 @@ If we replace the current flagment which showing the loading progress of SwipeRe
   - Swipe down to enable the refresh animation and let it run.
   - Click on Replace frament. The second fragment is still displayed. Note that the Inspector layout will show the first fragment int the hierarchy.
   - If you do the same thing with the First fragment  (with SwipeRefreshLayout wrapped in a FrameLayout), the fragment will be replaced as expected.
+
+It was tested for appcompat v22 and for v23.4.0 it still there.
