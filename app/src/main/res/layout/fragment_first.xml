@@ -14,13 +14,13 @@
             <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
                          android:layout_width="match_parent"
                          android:layout_height="match_parent"
-                         android:background="#ff0000">
+                         android:background="#0000ff">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="center"
-                    android:text="First Fragment!\n With not root SwipeToRefreshLayout!"
+                    android:text="First Fragment!\n With SwipeToRefreshLayout as NOT root of layout!\nPull down and push button."
                     android:textColor="#fff"
                     android:textSize="20sp"/>
             </FrameLayout>

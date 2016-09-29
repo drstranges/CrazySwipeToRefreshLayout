@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         findViewById(R.id.button).setOnClickListener(this);
+        if (savedInstanceState == null) replaceFragment();
     }
 
     @Override
@@ -28,12 +29,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void replaceFragment() {
 
         FragmentManager fm = getSupportFragmentManager();
-        boolean isSecond = fm.findFragmentById(R.id.container) instanceof SecondFragment;
+        boolean isFirstFragment = fm.findFragmentById(R.id.container) instanceof FirstFragment;
         Fragment fragment;
-        if (isSecond) {
-            fragment = new FirstFragment();
-        } else {
+        if (isFirstFragment) {
             fragment = new SecondFragment();
+        } else {
+            fragment = new FirstFragment();
         }
         fm.beginTransaction()
                 .replace(R.id.container, fragment)
