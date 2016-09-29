@@ -11,3 +11,4 @@ If we replace the current flagment which showing the loading progress of SwipeRe
   - If you do the same thing with the First fragment  (with SwipeRefreshLayout wrapped in a FrameLayout), the fragment will be replaced as expected.
 
 It was tested for appcompat v22 and for v23.4.0 it still there.
+appcompat v24.2.1 - not fixed yet.
